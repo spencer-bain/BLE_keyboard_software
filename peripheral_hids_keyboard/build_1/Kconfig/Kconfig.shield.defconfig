@@ -1,0 +1,3 @@
+osource "c:/nordic/myApps/peripheral_lbs_unmodified/boards/shields/*/Kconfig.defconfig"
+osource "c:/nordic/myApps/peripheral_kbds/boards/shields/*/Kconfig.defconfig"
+osource "C:/nordicsemi/v2.1.2/nrf/boards/shields/*/Kconfig.defconfig"

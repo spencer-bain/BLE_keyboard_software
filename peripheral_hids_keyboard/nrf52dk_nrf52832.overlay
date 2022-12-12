@@ -1,0 +1,90 @@
+// To get started, press Ctrl+Space to bring up the completion menu and view the available nodes.
+
+// You can also use the buttons in the sidebar to perform actions on nodes.
+// Actions currently available include:
+
+// * Enabling / disabling the node
+// * Adding the bus to a bus
+// * Removing the node
+// * Connecting ADC channels
+
+// For more help, browse the DeviceTree documentation at https://docs.zephyrproject.org/latest/guides/dts/index.html
+// You can also visit the nRF DeviceTree extension documentation at https://nrfconnect.github.io/vscode-nrf-connect/devicetree/nrfdevicetree.html
+/ {
+    gpiocustom {
+        compatible = "gpio-keys";
+        gpio3: gpio_3 {
+            gpios = <&gpio0 3 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 3";
+        };
+        gpio4: gpio_4 {
+            gpios = <&gpio0 4 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 4";
+        };
+        gpio9: gpio_9 {
+            gpios = <&gpio0 9 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 9";
+        };
+        gpio10: gpio_10 {
+            gpios = <&gpio0 10 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 10";
+        };
+        gpio11: gpio_11 {
+            gpios = <&gpio0 11 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 11";
+        };
+        gpio12: gpio_12{
+            gpios = <&gpio0 12 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 12";
+        };
+        gpio13: gpio_13 {
+            gpios = <&gpio0 13 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 13";
+        };
+        gpio14: gpio_14{
+            gpios = <&gpio0 14 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 14";
+        };
+        gpio22: gpio_22{
+            gpios = <&gpio0 22 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 22";
+        };
+        gpio23: gpio_23{
+            gpios = <&gpio0 23 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 23";
+        };
+        gpio24: gpio_24{
+            gpios = <&gpio0 24 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 24";
+        };
+        gpio25: gpio_25{
+            gpios = <&gpio0 25 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 25";
+        };
+        gpio26: gpio_26 {
+            gpios = <&gpio0 26 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 26";
+        };
+        gpio27: gpio_27 {
+            gpios = <&gpio0 27 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+            label = "Custom gpio 27";
+        };
+
+    };
+    aliases {
+        pin3  = &gpio3;
+        pin4  = &gpio4;
+        pin9  = &gpio9;
+        pin10 = &gpio10;
+        pin11 = &gpio11;
+        pin12 = &gpio12;
+        pin13 = &gpio13;
+        pin14 = &gpio14;
+        pin22 = &gpio22;
+        pin23 = &gpio23;
+        pin24 = &gpio24;
+        pin25 = &gpio25;
+        pin26 = &gpio26;
+        pin27 = &gpio27; 
+    };
+};
